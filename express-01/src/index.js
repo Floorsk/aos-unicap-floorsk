@@ -1,4 +1,8 @@
 import 'dotenv/config'
+import express from 'express'
 
-console.log("Hello")
-console.log(process.env.MY_SECRET)
+const app = express();
+
+app.listen(3000, () => {
+    console.log('Samuel tem que aprender a dirigir no mario kart')
+})
