@@ -1,8 +1,12 @@
-import 'dotenv/config'
-import express from 'express'
+import 'dotenv/config';
+import cors from 'cors';
+import express from 'express';
 
 const app = express();
+app.use(cors());
 
-app.listen(3000, () => {
-    console.log('Samuel tem que aprender a dirigir no mario kart')
+const port = process.env.PORT || 5000
+
+app.listen(port, () => {
+    console.log(`Listen to the door ${process.env.PORT}`)
 })
